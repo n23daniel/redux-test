@@ -1,0 +1,329 @@
+// Reset all browser styles & set font-size to 100%
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+// Set HTML5 elements to block
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+// Remove built in list styling
+ol, ul {
+    list-style: none;
+}
+
+// Remove link underlining
+a {
+    text-decoration: none;
+}
+
+// Normalize block quotes
+blockquote, q {
+    quotes: none;
+}
+
+// Remove pseudo elements
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+// Normalize tables
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// Global border-box
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+// Custom
+.abs-full {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.justify-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.aero {
+    line-height: 1.7 !important;
+}
+
+.transparent {
+    opacity: 0 !important;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
+
+// Typography
+.bold,
+b {
+    font-weight: 700 !important;
+}
+
+.capitalize {
+    text-transform: uppercase !important;
+}
+
+.u,
+.underline {
+    text-decoration: underline !important;
+}
+
+.italic {
+    font-style: italic !important;
+}
+
+.f-0 {
+    font-size: 0 !important;
+}
+
+.f-24 {
+    font-size: 24px !important;
+}
+
+.f-16 {
+    font-size: 16px !important;
+}
+
+.f-14 {
+    font-size: 14px !important;
+}
+
+.ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.break-word {
+    word-break: break-word;
+}
+
+// Aligns
+.text-center {
+    text-align: center !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.va-middle {
+    vertical-align: middle !important;
+}
+.va-top {
+    vertical-align: top !important;
+}
+.va-bottom {
+    vertical-align: bottom !important;
+}
+.flex-center {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.space-between {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.justify-end {
+    justify-content: flex-end !important;
+}
+.justify-start {
+    justify-content: flex-start !important;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+// Flex
+.dis-flex {
+    display: flex;
+}
+.flex {
+    flex: 1;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+// Displays
+.dis-ib {
+    display: inline-block !important;
+}
+.dis-b {
+    display: block !important;
+}
+.dis-t {
+    display: table !important;
+}
+.dis-tc {
+    display: table-cell !important;
+}
+.show {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
+
+// Positions
+.pos-rel {
+    position: relative !important;
+}
+.pos-abs {
+    position: absolute !important;
+}
+.pos-fix {
+    position: fixed !important;
+}
+
+// Width
+.w-25 {
+    width: 25% !important;
+}
+.w-33 {
+    width: 33.3333% !important;
+}
+.w-50 {
+    width: 50% !important;
+}
+.w-66 {
+    width: 66.6666% !important;
+}
+.w-75 {
+    width: 75% !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+.w-100-i {
+    width: 100% !important;
+    min-width: initial !important;
+    max-width: initial !important;
+}
+
+// Height
+.h-25 {
+    height: 25% !important;
+}
+.h-33 {
+    height: 33.3333% !important;
+}
+.h-50 {
+    height: 50% !important;
+}
+.h-66 {
+    height: 66.6666% !important;
+}
+.h-75 {
+    height: 75% !important;
+}
+.h-100 {
+    height: 100% !important;
+}
+
+// Margins
+@include margin(0);
+@include margin(5);
+@include margin(10);
+@include margin(15);
+@include margin(20);
+@include margin(25);
+@include margin(30);
+@include margin(50);
+
+// Paddings
+@include padding(0);
+@include padding(5);
+@include padding(10);
+@include padding(15);
+@include padding(20);
+@include padding(30);
+@include padding(50);
+
+.p-20-30 { padding: 20px 30px; }
+.p-10-30 { padding: 10px 30px; }
+
+// Show/Hide breakpoints
+
+@media (min-width: 1025px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hide-large-desktop {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .hide-small-desktop {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hide-tablet {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hide-phone {
+        display: none !important;
+    }
+}

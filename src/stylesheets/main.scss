@@ -1,0 +1,14 @@
+// Variables
+$primary: #222;
+$accent: #2fc;
+
+// Imports
+@import './abstracts/mixins';
+@import './abstracts/boilerplate';
+
+@import './base/typography';
+
+@import './layout/header';
+
+@import './pages/products';
+@import './pages/product';

@@ -1,0 +1,98 @@
+@mixin margin ($size) {
+	$unit:  #{$size}px;
+
+	.m-#{$size} {
+		margin: $unit !important;
+	}
+
+	.mt-#{$size} {
+		margin-top: $unit !important;
+	}
+
+	.mr-#{$size} {
+		margin-right: $unit !important;
+	}
+
+	.mb-#{$size} {
+		margin-bottom: $unit !important;
+	}
+
+	.ml-#{$size} {
+		margin-left: $unit !important;
+	}
+}
+
+@mixin padding ($size) {
+	$unit:  #{$size}px;
+
+	.p-#{$size} {
+		padding: $unit !important;
+	}
+
+	.pt-#{$size} {
+		padding-top: $unit !important;
+	}
+
+	.pr-#{$size} {
+		padding-right: $unit !important;
+	}
+
+	.pb-#{$size} {
+		padding-bottom: $unit !important;
+	}
+
+	.pl-#{$size} {
+		padding-left: $unit !important;
+	}
+}
+
+@mixin border ($color) {
+	.bl {
+		border-left: 1px solid $color !important;
+	}
+
+	.br {
+		border-right: 1px solid $color !important;
+	}
+
+	.bt {
+		border-top: 1px solid $color !important;
+	}
+
+	.bb {
+		border-bottom: 1px solid $color !important;
+	}
+
+	.ba {
+		border: 1px solid $color !important;
+	}
+}
+
+@mixin border_name ($name, $color) {
+	.bl-#{$name} {
+		border-left: 1px solid $color !important;
+	}
+
+	.br-#{$name} {
+		border-right: 1px solid $color !important;
+	}
+
+	.bt-#{$name} {
+		border-top: 1px solid $color !important;
+	}
+
+	.bb-#{$name} {
+		border-bottom: 1px solid $color !important;
+	}
+
+	.ba-#{$name} {
+		border: 1px solid $color !important;
+	}
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
